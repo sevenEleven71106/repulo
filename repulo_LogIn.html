@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="logIn.css">
+	<title></title>
+</head>
+<body>
+
+<div class="bx1">
+		<h1 id="h1">Log In</h1>
+		<div class="bx11">
+		<input type="text" id="inp1" placeholder="username">  <!-- username -->
+		<input type="password" id="inp2" placeholder="password"> <!-- password -->
+		<button onclick="input2()" id="btpass"> Show </button> 
+		<a href="Home.html">
+			<button onclick="enter()" id="ent1">Enter</button>
+		</a>
+		<script type="text/javascript">
+			// =========Funtion for the show button======== (called toggling- switch between 2 options. from text to asterisks or dots)
+		function input2() {
+  var x = document.getElementById("inp2");
+  if (x.type === "password") {     // checks if the type is set to "passsword", if yes, then when clicked it will switch  into text, which will allow you to view what you have inputted
+    x.type = "text";  
+  } else {    //if it is else or the type is text, it will switch in to password (dots or asterisks) again !alternate sila kada click sa button
+    x.type = "password";
+  }
+}
+</script>
+		</div>
+		<div class="noAcc">
+					<h1 id="h2">no account yet?</h1>
+					<a href="testdashboard.html">
+			<button onclick="bt2()" id="btn2">Sign up</button>
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>

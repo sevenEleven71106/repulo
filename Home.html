@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title></title>
+</head>
+<body>
+
+  <div class="navBox">
+  	<div id="img1">
+  		<img src="logo.PNG" id="logo1">
+  		<p id="sysN">ReportTR</p>
+  	</div> 
+
+  	<!-- ===========Navigational Menu========== -->
+  	<ul>
+  		<li id="li1">Home</li>
+      <a href="repulo_Dash.html">
+  		<li id="li2">Dashboard<li>
+        </a>
+  		<li id="li3">About</li>
+  	<input type="text" id="srch" placeholder="search...">
+  	</ul>
+  </div>
+
+	<!--============Image Slider============-->
+	<div class="slideshow"> 
+
+  <div class="w3-content w3-section">
+  <img class="imgSlide" src="imgsli1.png">
+  <img class="imgSlide" src="imgsl2.png">
+  <img class="imgSlide" src="imgsl3.png">
+  <img class="imgSlide" src="imgsl4.png">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("imgSlide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  		</div>
+      <div class="gallery">
+      <div class="bx1">
+        <img src="pic1.png">
+         <h1>Resolves Reports</h1>
+          <p>Reported problems can be easily seen and resolve by the barangay officials by just sending it through the ReportTR.</p>
+      </div>
+            <div class="bx2">
+          <img src="pic2.png">
+          <h1>Community Power</h1>
+          <p>Enables the community to unit for a better and cleaner environment by just checking for pending/unresolved reports or requests.</p>
+      </div>
+            <div class="bx3">
+          <img src="pic3.png">
+           <h1>Immedaite Action</h1>
+          <p>Because of the efficient sending of requests and reports, immediate actions and help can be provided.</p>
+      </div>
+            <div class="bx4">
+          <img src="pic4.png">
+           <h1>Efficient</h1>
+          <p>Barangay halls are not alway near every zone, by the ReportTr, there is no need to travel from home to the barangay hall to report or request something, just log in and send your concerns.</p>
+      </div>
+      </div>
+      <div class="embbed">
+
+         <iframe  src="https://www.youtube.com/embed/FVwvbS-0q18?si=fCEcOWjs-C-WdpdA" id="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.6745262926688!2d124.66680504011308!3d8.422036268888158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8d99dbca17b1%3A0x7ed4a65b7c189f5b!2sIndahag%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1732714754132!5m2!1sen!2sph" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+
+      </div>
+      <div class="footer">
+        <h1 id="foot">SOCIAL MEDIA</h1>
+        <p id="feet">Contact us for more infos and more updates!!!</p>
+        <a href="#" class="fa fa-twitter" id="twt">  @ReportTR</a>
+        <a href="#" class="fa fa-linkedin" id="lnk">  ReportTr.Offial</a>
+        <a href="#" class="fa fa-facebook" id="fb"> ReportTr.Official</a>
+        <a href="#" class="fa fa-vimeo" id="vm"> ReportTR_</a>
+          
+        </div>
+      </div>
+</body>
+</html>
